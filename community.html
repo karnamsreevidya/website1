@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Spaces</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#f7f8fa;}
+
+.header{width:100%;background:#fff;border-bottom:1px solid #e5e7eb;padding:14px 22px;
+display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;}
+.logo-sec{display:flex;align-items:center;gap:10px;}
+.logo-sec img{width:40px;height:40px;border-radius:50%;}
+.back-btn{font-size:20px;cursor:pointer;margin-right:10px;}
+
+.container{max-width:750px;margin:0 auto;padding:20px;}
+
+.section-title{
+    font-size:26px;
+    font-weight:800;
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.section-sub{
+    text-align:center;
+    font-size:15px;
+    color:#6b7280;
+    margin-bottom:30px;
+}
+
+/* BOX */
+.box{
+    background:#fff;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.box h2{
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:4px;
+}
+
+.box p{
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+/* COLORED BOXES */
+.yellow{background:#fff7d6;}
+.blue{background:#e7ecf8;}
+.green{background:#dff5df;}
+.pink{background:#ffe1e1;}
+
+/* LISTS */
+ul{margin-left:20px;margin-bottom:10px;}
+li{margin-bottom:6px;}
+
+/* JOIN BOX */
+.join-box{
+    background:linear-gradient(to right,#0b2c5f,#093570,#0e4a8c);
+    padding:22px;
+    border-radius:18px;
+    text-align:center;
+    color:white;
+    margin-top:30px;
+}
+
+.join-btns{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:14px;
+}
+
+.join-btn{
+    background:white;
+    color:#111;
+    padding:10px 16px;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    border:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div style="display:flex;align-items:center;">
+        <div class="back-btn" onclick="history.back()">←</div>
+        <div class="logo-sec">
+            <img src="c:\Users\91938\Downloads\softlabsdownload.jpg">
+            <div>
+                <div style="font-size:18px;font-weight:700;">KSBH</div>
+                <div style="font-size:13px;color:#6b7280;margin-top:-4px;">KSBH SoftLabs Pvt. Ltd.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size:26px;cursor:pointer;">☰</div>
+</div>
+
+<div class="container">
+
+    <div class="section-title">Community Spaces</div>
+
+    <div class="section-sub">
+        Explore our growing community spaces where members learn, connect, and collaborate.
+    </div>
+
+    <!-- GENERAL LOUNGE -->
+    <div class="box yellow">
+        <h2>General Lounge</h2>
+        <p>Open discussions, AI talk, daily insights, and community news.</p>
+
+        <h4>What you'll find:</h4>
+        <ul>
+            <li>Daily AI news discussions</li>
+            <li>Casual conversations</li>
+            <li>Community announcements</li>
+            <li>Welcome new members</li>
+        </ul>
+    </div>
+
+    <!-- PROMPT EXCHANGE -->
+    <div class="box blue">
+        <h2>Prompt Exchange</h2>
+        <p>Share and experiment with AI prompts & creative ideas.</p>
+
+        <h4>What you'll find:</h4>
+        <ul>
+            <li>ChatGPT prompts</li>
+            <li>Prompt engineering tips</li>
+            <li>Creative experiments</li>
+            <li>AI art prompts</li>
+        </ul>
+    </div>
+
+    <!-- AI TOOLS HUB -->
+    <div class="box blue">
+        <h2>AI Tools Hub</h2>
+        <p>Discover and discuss trending tools shaping the future.</p>
+
+        <h4>What you'll find:</h4>
+        <ul>
+            <li>New AI tools</li>
+            <li>Tool reviews & ratings</li>
+            <li>Integration tutorials</li>
+            <li>Comparison discussions</li>
+        </ul>
+    </div>
+
+    <!-- PROMOTE YOURSELF -->
+    <div class="box pink">
+        <h2>Promote Yourself</h2>
+        <p>Show your projects, startups, and achievements.</p>
+
+        <h4>What you'll find:</h4>
+        <ul>
+            <li>Project showcases</li>
+            <li>Achievement celebrations</li>
+            <li>Startup launches</li>
+            <li>Feedback & support</li>
+        </ul>
+    </div>
+
+    <!-- COLLABORATION -->
+    <div class="box green">
+        <h2>Collaboration & Team-Up</h2>
+        <p>Find teammates, co-founders, and collaborators.</p>
+
+        <h4>What you'll find:</h4>
+        <ul>
+            <li>Co-founder matching</li>
+            <li>Skill exchanges</li>
+            <li>Project partnerships</li>
+            <li>Team building</li>
+        </ul>
+    </div>
+
+    <!-- GUIDELINES -->
+    <div class="box">
+        <h2>Community Guidelines</h2>
+
+        <ul>
+            <li>Be respectful and constructive in all interactions</li>
+            <li>Share knowledge freely and help fellow members</li>
+            <li>Keep discussions relevant to AI & technology</li>
+            <li>No spam or self-promotion without value</li>
+            <li>Use appropriate channels for discussions</li>
+            <li>Celebrate wins together</li>
+        </ul>
+    </div>
+
+    <!-- STATUS -->
+    <div class="box">
+        <h2>Community Status</h2>
+
+        <div style="display:flex;justify-content:space-between;margin-top:15px;">
+            <div><b>Growing</b><br><small>Daily Engagement</small></div>
+            <div><b>New</b><br><small>Community</small></div>
+            <div><b>Both</b><br><small>WhatsApp & Discord</small></div>
+            <div><b>Connect</b><br><small>Like-minded People</small></div>
+        </div>
+    </div>
+
+    <!-- JOIN BOX -->
+    <div class="join-box">
+        <h3>Ready to Join the Conversation?</h3>
+        <p>Connect with like-minded AI enthusiasts.</p>
+
+        <div class="join-btns">
+            <!-- Buttons with real redirects -->
+<button class="join-btn" onclick="window.location.href='https://chat.whatsapp.com/'">Join WhatsApp Community</button>
+<button class="join-btn" onclick="window.location.href='https://discord.gg/'">Join Discord Server</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>About — Ignition</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+body{background:#f7f8fa;color:#0f172a}
+.header{background:#fff;border-bottom:1px solid #e6e9ef;padding:14px 20px;position:sticky;top:0;z-index:10}
+.header-inner{max-width:920px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;gap:10px;align-items:center}
+.logo img{width:42px;height:42px;border-radius:50%}
+.logo .title{font-weight:700;font-size:18px}
+.logo .sub{font-size:13px;color:#6b7280}
+.back{font-size:18px;cursor:pointer}
+.container{max-width:920px;margin:26px auto;padding:0 20px}
+.page-title{text-align:center;font-size:30px;font-weight:800;margin-bottom:8px}
+.page-sub{color:#6b7280;text-align:center;margin-bottom:22px}
+.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 6px 18px rgba(16,24,40,0.04);margin-bottom:18px;border:1px solid #eef2f7}
+.card .card-title{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;margin-bottom:8px}
+.card .card-title img{width:28px}
+.card p{line-height:1.6;color:#334155}
+.list{margin-top:12px;padding-left:18px}
+.list li{margin-bottom:8px;color:#334155}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.stat-box{background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e6eef6;text-align:center}
+.stat-box .big{font-weight:800;font-size:20px;margin-bottom:6px}
+.stat-box .small{color:#64748b}
+.team{background:#f0f9ff;padding:20px;border-radius:14px;border:1px solid #e8f2f6;margin-top:6px}
+.team-title{display:flex;align-items:center;gap:10px;font-weight:700;margin-bottom:10px}
+.team-desc{color:#334155;margin-bottom:14px}
+.team-list{display:flex;gap:14px;flex-wrap:wrap}
+.member{background:#fff;padding:12px;border-radius:12px;width:140px;border:1px solid #eef2f7;display:flex;align-items:center;gap:12px}
+.avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.n{background:#f59e0b}
+.p1{background:#0ea5e9}
+.p2{background:#10b981}
+.s{background:#a78bfa}
+.member .name{font-weight:700}
+.join-cta{margin-top:18px;background:linear-gradient(90deg,#fb7185 0%,#6366f1 100%);padding:24px;border-radius:14px;color:#fff;text-align:center}
+.join-cta h3{font-weight:800;margin-bottom:8px}
+.join-cta p{opacity:0.92}
+.join-buttons{margin-top:12px;display:flex;gap:12px;justify-content:center}
+.btn{background:rgba(255,255,255,0.15);padding:10px 16px;border-radius:10px;border:none;color:#fff;font-weight:700;cursor:pointer}
+@media (max-width:720px){.stats{grid-template-columns:1fr}.member{width:120px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="https://ignition-in-ai-era.vercel.app/logo.png" alt="logo">
+      <div>
+        <div class="title">KSBH</div>
+        <div class="sub">KSBH SoftLabs Pvt. Ltd.</div>
+      </div>
+    </div>
+    <div class="back" onclick="location.href='index.html'">← Back</div>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="page-title">About Our Community</h1>
+  <div class="page-sub">The story behind KSBH SoftLabs Pvt. Ltd. and what drives us forward</div>
+
+  <section class="card">
+    <div class="card-title"><img src="https://ignition-in-ai-era.vercel.app/icons/plant.png" alt="">Our Beginning</div>
+    <p>
+      Ignition in AI Era is a new and growing community that started less than a year ago. We began with a simple vision: to create a space where AI enthusiasts, builders, and creators could connect and learn from each other.
+    </p>
+    <p style="margin-top:10px">While we're still in our early stages, we're building something special — a vibrant global community where like-minded people can explore AI, share ideas, and grow together.</p>
+  </section>
+
+  <section class="card">
+    <div class="card-title"><img src="https://ignition-in-ai-era.vercel.app/icons/target.png" alt="">Our Mission</div>
+    <p>To create a space where AI builders, creators, and enthusiasts can connect, learn, and collaborate as we grow. No ads, no spam — just genuine connections and shared learning in the AI space.</p>
+    <ul class="list">
+      <li><strong>Collaboration</strong> — Building connections and helping each other as we explore AI together.</li>
+      <li><strong>Learning</strong> — Sharing knowledge and discovering new AI tools and techniques together.</li>
+      <li><strong>Growth</strong> — Growing together as a community while supporting each member's AI journey.</li>
+      <li><strong>Openness</strong> — An inclusive, welcoming community where everyone can contribute and learn.</li>
+    </ul>
+  </section>
+
+  <section class="card" style="background:#fff7ed;">
+    <div class="card-title">✨ What Makes Us Different</div>
+    <ul class="list">
+      <li>Growing community — we're building something special from the ground up</li>
+      <li>Like-minded people — the best place to find others passionate about AI</li>
+      <li>No pressure — we're all learning and exploring AI together</li>
+      <li>Direct access — join immediately without approval, connect on both WhatsApp and Discord</li>
+      <li>Genuine connections — focused on real relationships, not just networking</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <div class="card-title"><img src="https://ignition-in-ai-era.vercel.app/icons/stats.png" alt="">Where We Stand</div>
+    <div class="stats" style="margin-top:12px">
+      <div class="stat-box"><div class="big">Growing</div><div class="small">Daily Members</div></div>
+      <div class="stat-box"><div class="big">&lt; 1 Year</div><div class="small">Community Age</div></div>
+      <div class="stat-box"><div class="big">Both</div><div class="small">WhatsApp & Discord</div></div>
+      <div class="stat-box"><div class="big">Global</div><div class="small">Reach</div></div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="team-title"><img src="https://ignition-in-ai-era.vercel.app/icons/team.png" alt="">Our Team</div>
+    <div class="team-desc">Our community was started and is maintained by a passionate team of AI enthusiasts who believe in the power of connecting like-minded individuals.</div>
+    <div class="team-list">
+      <div class="member"><div class="avatar n">N</div><div><div class="name">Nithin Varma</div><div class="role" style="color:#64748b;font-size:13px">Co-founder</div></div></div>
+      <div class="member"><div class="avatar p1">P</div><div><div class="name">Praniteh</div><div class="role" style="color:#64748b;font-size:13px">Community Ops</div></div></div>
+      <div class="member"><div class="avatar p2">P</div><div><div class="name">Philip</div><div class="role" style="color:#64748b;font-size:13px">Tech</div></div></div>
+      <div class="member"><div class="avatar s">S</div><div><div class="name">Sanigdh</div><div class="role" style="color:#64748b;font-size:13px">Content</div></div></div>
+    </div>
+  </section>
+
+  <section class="join-cta">
+    <h3>Ready to Join Us?</h3>
+    <p>Be part of a growing community exploring the future of AI</p>
+    <div class="join-buttons">
+      <button class="btn" onclick="window.open('https://chat.whatsapp.com/', '_blank')">Join WhatsApp</button>
+      <button class="btn" onclick="window.open('https://discord.gg/', '_blank')">Join Discord</button>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

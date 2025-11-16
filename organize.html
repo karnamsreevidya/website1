@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Organize Event</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#f7f8fa;}
+.header{display:flex;align-items:center;gap:10px;padding:15px;background:white;border-bottom:1px solid #e5e7eb;position:sticky;top:0;}
+.back{font-size:20px;cursor:pointer;margin-right:10px;}
+.logo-img{width:40px;height:40px;border-radius:50%;}
+.title-box{display:flex;flex-direction:column;}
+.title{font-size:20px;font-weight:700;color:#111;}
+.sub{font-size:13px;color:#6b7280;margin-top:-3px;}
+.container{max-width:850px;margin:0 auto;padding:20px;}
+.section{background:white;border-radius:18px;padding:25px;margin-top:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);} 
+.section h2{font-size:22px;font-weight:800;margin-bottom:15px;display:flex;align-items:center;gap:8px;}
+label{font-size:15px;font-weight:600;margin-top:12px;display:block;}
+input,textarea,select{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:10px;margin-top:6px;font-size:14px;background:white;}
+textarea{height:110px;resize:none;}
+.small-row{display:flex;gap:15px;margin-top:10px;}
+.small-row div{flex:1;}
+.upload-box{margin-top:10px;}
+.submit-box{text-align:right;margin-top:20px;}
+.btn{background:#f97316;color:white;border:none;padding:14px 25px;font-size:16px;font-weight:700;border-radius:12px;cursor:pointer;}
+.cancel{background:none;color:#6b7280;font-weight:600;border:none;font-size:15px;margin-right:10px;cursor:pointer;}
+.note{font-size:13px;color:#6b7280;margin-top:10px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="back" onclick="window.history.back()">←</div>
+  <img class="logo-img" src="your_logo_here.png" />
+  <div class="title-box">
+    <div class="title">KSBH</div>
+    <div class="sub">KSBH SoftLabs Pvt. Ltd.</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <h2 style="font-size:28px;font-weight:800;text-align:center;margin-top:10px;">📅 Organize Event</h2>
+  <p style="text-align:center;color:#6b7280;">Submit your event proposal for community consideration</p>
+
+  <!-- PERSONAL INFORMATION -->
+  <div class="section">
+    <h2>👤 Personal Information</h2>
+
+    <label>Full Name *</label>
+    <input type="text" placeholder="Enter your full name" required>
+
+    <label>Email Address *</label>
+    <input type="email" placeholder="your.email@example.com" required>
+
+    <label>LinkedIn Profile *</label>
+    <input type="text" placeholder="https://linkedin.com/in/yourprofile" required>
+
+    <label>Portfolio / Website (Optional)</label>
+    <input type="text" placeholder="https://yourportfolio.com">
+
+    <label>Background</label>
+    <select>
+      <option>Select your background</option>
+      <option>Student</option>
+      <option>Developer</option>
+      <option>AI Enthusiast</option>
+      <option>Professional</option>
+    </select>
+
+  </div>
+
+  <!-- EVENT IDEA -->
+  <div class="section">
+    <h2>💡 Event Idea & Type</h2>
+
+    <label>Event Type *</label>
+    <select required>
+      <option>Select event type</option>
+      <option>Workshop</option>
+      <option>Webinar</option>
+      <option>Meetup</option>
+      <option>Hackathon</option>
+    </select>
+
+    <label>Event Idea *</label>
+    <textarea placeholder="Describe your event idea in detail..."></textarea>
+
+    <label>Event Roadmap *</label>
+    <textarea placeholder="Outline event structure, milestones, and timeline..."></textarea>
+
+    <label>Why do you want to organize this event? *</label>
+    <textarea placeholder="Explain your motivation and how this benefits the community..."></textarea>
+
+  </div>
+
+  <!-- EVENT DETAILS -->
+  <div class="section">
+    <h2>📝 Event Details</h2>
+
+    <div class="small-row">
+      <div>
+        <label>Event Date *</label>
+        <input type="text" placeholder="dd-mm-yyyy" required>
+      </div>
+      <div>
+        <label>Event Time *</label>
+        <input type="text" placeholder="e.g. 2:00 PM IST – 3:30 PM IST" required>
+      </div>
+    </div>
+
+    <label class="upload-box"><input type="checkbox"> Supporting Documents</label>
+
+    <label>Upload Document (Optional – PDF, DOC, TXT)</label>
+    <input type="file" />
+
+    <div class="submit-box">
+      <button class="cancel" onclick="window.history.back()">Cancel</button>
+      <button class="btn">Submit Proposal</button>
+    </div>
+
+    <p class="note">📌 Note: All proposals will be reviewed within 48 hours. We will contact you back via email.</p>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KSBH softlabs</title>
+<style>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: #f7f8fa; }
+
+/* HEADER */
+.header { width: 100%; background: #ffffff; border-bottom: 1px solid #e5e7eb; padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; }
+.logo-sec { display: flex; align-items: center; gap: 8px; }
+.logo-sec img { width: 40px; height: 40px; border-radius: 50%; }
+.logo-title { font-size: 20px; font-weight: 700; color: #111; }
+.logo-sub { font-size: 14px; color: #6b7280; margin-top: -5px; }
+.menu-btn { border: none; background: none; font-size: 26px; cursor: pointer; }
+
+/* SIDEBAR */
+.sidebar { position: fixed; top: 0; right: -400px; width: 330px; height: 100vh; background: #ffffff; box-shadow: -2px 0 25px rgba(0,0,0,0.1); padding: 20px; transition: 0.3s; border-radius: 15px 0 0 15px; }
+.sidebar.active { right: 0; }
+.sidebar h2 { font-size: 20px; font-weight: 700; margin-bottom: 5px; }
+.sidebar p { font-size: 14px; color: #6b7280; margin-bottom: 20px; }
+.nav-box { background: #f8fafc; padding: 14px; border-radius: 12px; display: flex; gap: 12px; align-items: center; margin-bottom: 12px; border: 1px solid #e5e7eb; cursor: pointer; }
+.nav-box img { width: 26px; }
+.nav-title { font-weight: 600; }
+.join-box { padding: 14px; border-radius: 12px; display: flex; gap: 12px; align-items: center; margin-bottom: 12px; cursor: pointer; }
+.whatsapp { background: #e8fbe8; }
+.discord { background: #ecebff; }
+
+/* MAIN */
+.container { width: 100%; max-width: 650px; margin: 0 auto; padding: 20px; text-align: center; }
+.hero-img { width: 110px; height: 110px; border-radius: 50%; margin: 18px auto; }
+.hero-title { font-size: 26px; font-weight: 800; }
+.badges { display: flex; justify-content: center; gap: 10px; margin-top: 12px; }
+.badge { padding: 4px 12px; border-radius: 20px; color: white; font-size: 12px; font-weight: 600; }
+.green { background: #16a34a; }
+.orange { background: #f97316; }
+.gray { background: #9ca3af; }
+
+/* CARDS */
+.card { background: white; padding: 18px; border-radius: 16px; box-shadow: 0 3px 10px rgba(0,0,0,0.07); display: flex; align-items: center; gap: 12px; margin-top: 10px; cursor: pointer; }
+.card img { width: 36px; }
+.card-text h3 { font-size: 17px; font-weight: 700; }
+.card-text p { font-size: 13px; color: #6b7280; }
+.arrow { margin-left: auto; font-size: 22px; color: #9ca3af; }
+
+/* JOIN BUTTONS */
+.join-title { margin-top: 35px; font-size: 16px; font-weight: 600; color: #6b7280; }
+.join-btn { width: 100%; padding: 14px; border-radius: 12px; color: white; font-size: 16px; font-weight: 700; margin-top: 12px; display: flex; justify-content: center; align-items: center; gap: 10px; cursor: pointer; border: none; }
+.btn-wa { background: #22c55e; }
+.btn-dis { background: #4f46e5; }
+
+/* BOTTOM BADGES */
+.bottom-badges { display: flex; justify-content: center; gap: 12px; margin: 28px 0; flex-wrap: wrap; }
+.bottom-item { background: #fff; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; display: flex; gap: 8px; align-items: center; border: 1px solid #e5e7eb; }
+.bottom-item img { width: 18px; }
+
+/* FOOTER */
+.footer { text-align: center; color: #6b7280; font-size: 12px; margin-bottom: 30px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-sec">
+    <img src="c:\Users\91938\Downloads\softlabsdownload.jpg" />
+    <div>
+      <div class="logo-title">KSBH</div>
+      <div class="logo-sub">KSBH SoftLabs Pvt. Ltd.</div>
+    </div>
+  </div>
+  <button class="menu-btn" onclick="openMenu()">☰</button>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h2>Navigation</h2>
+  <p>Explore our community</p>
+
+  <div class="nav-box">
+    <img src="c:\Users\91938\Downloads\softlabsdownload.jpg" />
+    <div>
+      <div class="nav-title">Events</div>
+      <small>View upcoming events</small>
+    </div>
+  </div>
+
+  <div class="nav-box">
+    <img src="c:\Users\91938\Downloads\comdownload.jpg" />
+    <div>
+      <div class="nav-title">Event Registration</div>
+      <small>Register for events</small>
+    </div>
+  </div>
+
+  <h3 style="margin-top:18px; margin-bottom:8px;">Join Our Community</h3>
+
+  <div class="join-box whatsapp">
+    <img src="https://ignition-in-ai-era.vercel.app/icons/whatsapp.png" /> WhatsApp Group
+  </div>
+
+  <div class="join-box discord">
+    <img src="https://ignition-in-ai-era.vercel.app/icons/discord.png" /> Discord Server
+  </div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <img class="hero-img" src="c:\Users\91938\Downloads\aidownload.jpg" />
+  <div class="hero-title">KSBH SoftLabs Pvt. Ltd.</div>
+
+  <div class="badges">
+    <div class="badge green">Growing Daily</div>
+    <div class="badge orange">New Community</div>
+    <div class="badge gray">Growing Fast</div>
+  </div>
+
+  <!-- CARDS -->
+    <div class="card" onclick="window.location.href='about.html'">
+    <img src="c:\Users\91938\Downloads\comdownload.jpg" />
+    <div class="card-text">
+      <h3>About Our Community</h3>
+      <p>Learn about our mission, values, and the community.</p>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="card" onclick="window.location.href='community.html'">
+    <img src="c:\Users\91938\Downloads\spacedownload.png" />
+    <div class="card-text">
+      <h3>Community Spaces</h3>
+      <p>Explore discussions and channels.</p>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="card" onclick="window.location.href='join.html'">
+    <img src="c:\Users\91938\Downloads\joinimages.jpg" />
+    <div class="card-text">
+      <h3>How to Join</h3>
+      <p>Step-by-step guide to joining.</p>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="card" onclick="window.location.href='organize.html'">
+    <img src="c:\Users\91938\Downloads\eventimages.png" />
+    <div class="card-text">
+      <h3>Organize Event</h3>
+      <p>Submit your event proposal.</p>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="join-title">Choose Your Platform</div>
+
+  <button class="join-btn btn-wa"  onclick="window.location.href='https://chat.whatsapp.com/'">💬 Join WhatsApp Group</button>
+  <button class="join-btn btn-dis" onclick="window.location.href='https://discord.gg/'">🎮 Join Discord Server</button>
+
+  <!-- <button class="join-btn" onclick="window.location.href='https://chat.whatsapp.com/'">Join WhatsApp Community</button>
+<button class="join-btn" onclick="window.location.href='https://discord.gg/'">Join Discord Server</button> -->
+
+  <div class="bottom-badges">
+    <div class="bottom-item"><img src="https://ignition-in-ai-era.vercel.app/icons/collab.png" /> Collaboration</div>
+    <div class="bottom-item"><img src="https://ignition-in-ai-era.vercel.app/icons/learn.png" /> Learning</div>
+    <div class="bottom-item"><img src="https://ignition-in-ai-era.vercel.app/icons/growth.png" /> Growth</div>
+    <div class="bottom-item"><img src="https://ignition-in-ai-era.vercel.app/icons/open.png" /> Openness</div>
+  </div>
+
+  <div class="footer">© 2025 KSBH SoftLabs Pvt. Ltd.</div>
+</div>
+
+<script>
+function openMenu() {
+  document.getElementById('sidebar').classList.add('active');
+}
+</script>
+</body>
+</html>
