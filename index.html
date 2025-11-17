@@ -7,7 +7,7 @@
 <style>
 /* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-body { background: #f7f8fa; }
+body { background: #b6e3cb; }
 
 /* HEADER */
 .header { width: 100%; background: #ffffff; border-bottom: 1px solid #e5e7eb; padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; }
@@ -30,7 +30,7 @@ body { background: #f7f8fa; }
 .discord { background: #ecebff; }
 
 /* MAIN */
-.container { width: 100%; max-width: 650px; margin: 0 auto; padding: 20px; text-align: center; }
+.container { width: 100%; max-width: 650px; margin: 0 0 0 auto; padding: 20px; text-align: center; }
 .hero-img { width: 110px; height: 110px; border-radius: 50%; margin: 18px auto; }
 .hero-title { font-size: 26px; font-weight: 800; }
 .badges { display: flex; justify-content: center; gap: 10px; margin-top: 12px; }
@@ -40,7 +40,8 @@ body { background: #f7f8fa; }
 .gray { background: #9ca3af; }
 
 /* CARDS */
-.card { background: white; padding: 18px; border-radius: 16px; box-shadow: 0 3px 10px rgba(0,0,0,0.07); display: flex; align-items: center; gap: 12px; margin-top: 10px; cursor: pointer; }
+
+.card { background: white; padding: 18px; border-radius: 100px; box-shadow: 0 3px 10px rgba(0,0,0,0.07); display: flex; align-items: center; gap: 12px; margin-top: 10px; cursor: pointer; }
 .card img { width: 36px; }
 .card-text h3 { font-size: 17px; font-weight: 700; }
 .card-text p { font-size: 13px; color: #6b7280; }
@@ -62,7 +63,6 @@ body { background: #f7f8fa; }
 </style>
 </head>
 <body>
-
 <div class="header">
   <div class="logo-sec">
     <img src="c:\Users\91938\Downloads\softlabsdownload.jpg" />
@@ -119,6 +119,7 @@ body { background: #f7f8fa; }
   </div>
 
   <!-- CARDS -->
+   <div class="container1">
     <div class="card" onclick="window.location.href='about.html'">
     <img src="c:\Users\91938\Downloads\comdownload.jpg" />
     <div class="card-text">
@@ -154,11 +155,12 @@ body { background: #f7f8fa; }
     </div>
     <div class="arrow">›</div>
   </div>
+  </div>
 
   <div class="join-title">Choose Your Platform</div>
 
-  <button class="join-btn btn-wa"  onclick="window.location.href='https://chat.whatsapp.com/'">💬 Join WhatsApp Group</button>
-  <button class="join-btn btn-dis" onclick="window.location.href='https://discord.gg/'">🎮 Join Discord Server</button>
+<button class="join-btn btn-wa"  onclick="window.location.href='https://chat.whatsapp.com/'">💬 Join WhatsApp Group</button>
+<button class="join-btn btn-dis" onclick="window.location.href='https://discord.gg/'">🎮 Join Discord Server</button>
 
   <!-- <button class="join-btn" onclick="window.location.href='https://chat.whatsapp.com/'">Join WhatsApp Community</button>
 <button class="join-btn" onclick="window.location.href='https://discord.gg/'">Join Discord Server</button> -->
@@ -180,3 +182,4 @@ function openMenu() {
 </script>
 </body>
 </html>
+*/
